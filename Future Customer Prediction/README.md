@@ -2441,7 +2441,7 @@ pyplot.show()
 
 **RESULT:**
 <br>
-The logistic regression model accuracy scores are highest with 36 selected feature. Therefore, we will compare the results when using all features vs keeping 36 features.
+The logistic regression model accuracy scores are highest with 15 selected feature. Therefore, we will compare the results when using all features vs keeping only 15 features.
 
 ## 2.4.2 Comparison of Logistic Regression models with different features
 
@@ -2486,7 +2486,7 @@ print(classification_report(y_test, predictions))
     
 
 
-**Logistic Regression with 36 features:**
+**Logistic Regression with 15 features:**
 
 
 ```python
@@ -2496,7 +2496,7 @@ dropped = df_filled[['Target_Sold','Target_Sales' ]]
 # feature selection
 def select_features(X_train, y_train, X_test):
     # configure to select a subset of features
-    fs = SelectKBest(score_func=f_classif, k=36)
+    fs = SelectKBest(score_func=f_classif, k=15)
     # learn relationship from training data
     fs.fit(X_train, y_train)
     # transform train input data
