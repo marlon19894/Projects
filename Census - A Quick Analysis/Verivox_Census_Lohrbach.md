@@ -1,3 +1,10 @@
+THE TASK
+
+The task of this project was to produce a quick analysis on the famous census dataset. It was not allowed to spent 4 hours on this project. In the following you find my way of challenging this task.
+
+
+
+
 # 1. First view on the data
 
 
